@@ -5,6 +5,7 @@ import './style.scss';
 import NavBar from './components/nav_bar';
 import CurrentAssignment from './components/current_assignment';
 import assignments from './assignments.json';
+import AlertDialog from './components/Fab';
 
 class App extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class App extends Component {
       <div className="app">
         <NavBar />
         <CurrentAssignment assignment={assignments[this.state.currentAssignment]} />
+        <AlertDialog />
         <div className="pastA">
           {pastAssignments}
         </div>
